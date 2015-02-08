@@ -1,11 +1,14 @@
+bodyParser = require('body-parser')
+
 module.exports = (app, env)->
   app.use(require('connect-livereload')())
-  bodyParser = require('body-parser')
   app.use(bodyParser.json())
   app.use(bodyParser.urlencoded({extended: true}))
 
   app.get('/main.js', (req, res)->
-    res.send('cunt')
+
+    res.setHeader('content-type', 'application/javascript');
+    res.sendFile('dist/main.js', {root: '.'})
   )
 
   app.get('/', (req, res)->
