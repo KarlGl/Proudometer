@@ -50,7 +50,8 @@
     "body-parser": "^1.11.0",
     "coffeeify": "^1.0.0",
     "gulp-browserify": "^0.5.1",
-    "rename": "^0.2.3"
+    "rename": "^0.2.3",
+    "d3-line-chart": "^0.1.2"
   },
   "dependencies": {
     "lodash": "^2.4.1"

@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="speedometer.css" media="screen" />
         <script type="text/javascript" src="main.js"></script>
 
+        <script type="text/javascript" src="d3.js" charset="utf-8"></script>
+        <script type="text/javascript" src="d3-line-chart.js" charset="utf-8"></script>
         <script type="text/javascript" src="xcanvas.js"></script>
         <script type="text/javascript" src="tbe.js"></script>
         <script type="text/javascript" src="digitaldisplay.js"></script>
@@ -15,11 +17,11 @@
     </head>
     <body>
         <h1>PROUDOMETER</h1>
+        <div id="chart"></div>
         <div id="speedometer"></div>
         <form id="form">
         <input name="p" type="number" min="0" max="100"></input>
         <input type="submit"></input>
         </form>
-        <svg id="visualisation" width="1000" height="500"></svg>
     </body>
 </html>
